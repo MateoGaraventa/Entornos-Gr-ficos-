@@ -1,0 +1,455 @@
+Ejercitación 1 - Responder el siguiente cuestionario
+
+1. Qué es HTML, cuando fue creado, cuáles fueron las distintas versiones y cuál es la última?
+
+HTML o mejor dicho Hypertext Markup Languague (Lenguaje de marcas de hipertexto), es un lenguaje de 
+marcado para la elaboración de páginas web. Este mismo usa distintas etiquetas para indicar los distintos
+elementos del sitio, estos elementos pueden ser titulos, subtitulos, parrafos, imagenes, metadatos, etc. 
+Su primera version aparece en 1991, con el fin de crear un sistema de hipertexto que les permitiera 
+a los investigadores CERN intercambiar informacion facilmente. Luego en 1995 se publico HTML 2.0, 
+que fue la primera estandarizacion del lenguaje. Dos años después, en 1997, se generaron dos nuevas 
+versiones: a principios de año se publicó la versión HTML 3.2 y, a finales del mismo año, se publicó
+oficial: la versión HTML 4.01. Desde el año 2014, HTML 5 es estándar y, aunque siguen surgiendo nuevas
+modificaciones y actualizaciones, los cambios son mínimos y fáciles de asimilar. 
+Por ejemplo, una de las últimas recomendaciones es HTML5 es que admite nuevas funcionalidades del lenguaje de
+marcado, como multimedia, nuevas etiquetas y elementos. También admite audio y vídeo.
+
+2. ¿Cuáles son los principios básicos que el W3C recomienda seguir para la creación de documentos 
+con HTML?
+
+Para la creación de documentos con HTML, el W3C recomienda seguir los siguientes principios básicos:
+
+Estructura: Es importante utilizar una estructura clara y semántica en el documento HTML, utilizando etiquetas
+adecuadas para cada sección y contenido. La estructura debe reflejar la jerarquía y relación entre los 
+diferentes elementos del contenido.
+
+Separación de presentación y contenido: El HTML debe utilizarse para definir el contenido y la estructura del 
+documento, mientras que el diseño y la presentación deben ser controlados a través de 
+CSS (Cascading Style Sheets).
+
+Accesibilidad: El documento HTML debe ser accesible para todos los usuarios, independientemente de su 
+discapacidad o dispositivo de acceso. Esto incluye el uso de etiquetas adecuadas para describir el contenido,
+el uso de atributos alt en las imágenes, el uso de enlaces de texto descriptivos, entre otros.
+
+Validación: Es importante validar el código HTML para asegurarse de que cumple con los estándares definidos 
+por el W3C y que no contiene errores. La validación ayuda a garantizar la interoperabilidad entre diferentes 
+navegadores y dispositivos.
+
+Optimización: Es importante optimizar el documento HTML para mejorar su rendimiento y velocidad de carga. 
+Esto incluye el uso de etiquetas semánticas y ligereza en la carga de recursos, entre otros aspectos.
+
+Cumpliendo con estos principios básicos, podemos garantizar que el documento HTML sea accesible, interoperable, 
+fácil de mantener y actualizar en el futuro.
+
+3. En las Especificaciones de HTML, ¿cuándo un elemento o atributo se considera desaprobado? ¿y 
+obsoleto?
+
+Un elemento o atributo se considera desaprobado cuando ha quedado anticuado por el uso de estructuras nuevas
+y hay una alternativa mejor. Estos se definen en el manual de referencia, en los lugares apropiados, marcados
+como desaprobados. 
+Un elemento o atributo se considera obsoleto cuando no hay garantia de soporte por parte de un agente de 
+usuario. Estos dejan de estar definidos en la especificacion  pero se enumeran por motivos históricos en
+la sección de cambios del manual de referencia.
+
+
+4. Qué es el DTD y cuáles son los posibles DTDs contemplados en la especificación de HTML 4.01?
+
+El DTD (Document Type Definition) es la definicion de los elementos y atributos validos un documento HTML y 
+la forma en la que estos se pueden anidar.
+Hay 3 DTDs para HTML 4.01:
+DTD Estricto (Strict DTD): Usado por páginas web que excluyen atributos y elementos que la W3C espera ir
+eliminando a medida que crezca la compatibilidad con CSS.
+
+DTD Transicional (Transitional DTD): Usado por páginas web que incluyen atributos y elementos que la W3C 
+espera ir eliminando a medida que crezca la compatibilidad con CSS.
+
+DTD Conjunto de marcos (Frameset DTD): Usado por páginas web con marcos.
+
+5. Qué son los metadatos y cómo se especifican en HTML?
+
+Los metadatos son informacion adicional que se utilizan para explicar varias cosas de ese html. Como por 
+ejemplo la version de html que utiliza una pagina web.
+Las etiquetas de metadatos se deben añadir entre las etiquetas <head> </head> del código HTML.
+Aqui especificamos con la etiqueta meta quien es el autor. 
+
+<!-- Especificacion un metadato !-->
+<head>
+    <meta name = "autor" content= "Mateo Garaventa">
+</head>
+
+
+Ejercitación 2
+
+HTML está compuesto por un conjunto de elementos que son la base de su estructura. Los elementos 
+están compuestos por dos tags (el de apertura y el de cierre) y el contenido
+en el medio (con excepción de los elementos vacíos ). Cada tag puede tener atributos
+(proporcionan ciertas características como altura, ancho, color, etc.) y eventos (asocian un script 
+que se ejecuta cuando el evento ocurre).
+Analizar los siguientes segmentos de código indicando en qué sección del documento HTML 
+se colocan, cuál es el efecto que producen y señalar cada uno de los elementos, etiquetas, y atributos 
+(nombre y valor), aclarando si es obligatorio.
+
+2.a)
+<!-- Código controlado el día 12/08/2009 →!-->
+
+Lo utilizamos para realizar un comentario, podemos verlo dentro de la etiqueta head o body. No es obligatorio
+realizar comentarios.
+
+2.b) 
+<div id="bloque1">Contenido del bloque1</div>
+
+Estamos frente a un bloque div lo utilizamos para dividir o separar los contenidos de html, en este caso es el
+texto "Contenido del bloque1". Debemos escribirlo dentro de las etiquetas <body></body>.
+Tambien se le fue asignado un atributo id que es "bloque1", el cual no es obligatorio.
+
+2.c) 
+<img src="" alt="lugar imagen" id="im1" name="im1" width="32" height="32" longdesc="detalles.htm" />
+
+Etiqueta utilizada para agregar una imagen, la utilizamos dentro de <body></body> y como podemos ver se le 
+asigna varios atributos, src(el cual no tiene valor), alt (su valor es "lugar imagen"), id (el cual recibe el
+nombre de "im1"), width (su valor es "32"), height (su valor es "32") y longdesc(su valor es "detalles.htm").
+Todos estos atributos no son obligatorios. 
+
+2.d)
+<meta name="keywords" lang="es" content="casa, compra, venta, alquiler " />
+<meta http-equiv="expires" content="16-Sep-2019 7:49 PM" />
+
+Etiqueta utilizada para brindar informacion sobre el documento que estamos trabajando, lo colocamos dentro de 
+<head></head>. No es obligatoria.
+
+2.e)
+<a href="http://www.e-style.com.ar/resumen.html" type="text/html" hreflang="es" charset="utf-8" 
+rel="help">Resumen HTML </a>
+
+Etiqueta utilizada para anclar un hipervinculo. Se coloca dentro de <body></body>. Tiene varios atributos, 
+href (el cual aparece el url en este caso "http://www.e-style.com.ar/resumen.html"), type (que toma el valor
+de "text/html"),hreflang (tomando el valor "es"), charset (tomando el valor "utf-8") y rel (tomando el
+valor "help") y por el ultimo el texto Resumen HTML que es el que se vera en la pagina como enlace. Todos
+estos atributos no son obligatorios.
+
+2.f)
+<table width="200" summary="Datos correspondientes al ejercicio vencido">
+<caption align="top"> Título </caption>
+<tr>
+<th scope="col">&nbsp;</th>
+<th scope="col">A</th>
+<th scope="col">B</th>
+<th scope="col">C</th>
+</tr>
+<tr>
+<th scope="row">1º</th>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<th scope="row">2º</th>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+
+Aqui podemos ver varias etiquetas entre ella <table></table>, <caption></caption>, <tr></tr>, <th></th> y
+<td></td>
+Con <table></table> indicamos que estamos creando una tabla, con caption le asignamos un titulo, con ella
+indicamos el titulo. Vemos que tiene los atributos width(toma el valor "200") y summary (que toma el valor
+"Datos correspondientes al ejercicio vencido"). No son obligatorios.
+Con <tr></tr>indicamos el comienzo de una nueva fila y con <th></th> indicamos lo que quiero que haya dentro
+de esa primera fila.
+Dentro de <th></th> encontramos los atributos scope (que toma los valores "col" y "row"). No son obligatorios.
+
+Ejercitación 3
+En cada caso, explicar las diferencias entre los segmentos de código y sus visualizaciones:
+
+3.a) 
+<a href="http://www.google.com.ar">Click aquí para ir a Google</a>
+<a href="http://www.google.com.ar" target="_blank">Click aquí para ir a Google</a>
+<a href="http://www. google.com.ar" type="text/html" hreflang="es" charset="utf-8" rel="help">
+<a href="#">Click aquí para ir a Google</a>
+<a href="#arriba">Click aquí para volver arriba</a>
+<a name="arriba" id="arriba"></a>
+
+En la primera linea <a></a> nos deriva a la pagina "http://www.google.com.ar" en una nueva pestana. 
+En la segunda linea nos deriva a la misma pagina pero en la misma pestana que ya nos encontrabamos.
+En la tercer linea al no tener ningun texto entre la aperturra y cerradura de esta, no podremos observar 
+el enlace en la página.
+En la cuarta linea al no estar el href, cuando cliqueemos no me va a derivar a ningun lado. 
+El la quinta y sexta linea se complementan ya que el href="#arriba" nos llevara a la parte de la pagina donde 
+haya una etiqueta con el id="arriba", que en este caso tambien es una etiqueta <a/>
+
+3.b)
+<p><img src="im1.jpg" alt="imagen1" /><a href="http://www.google.com.ar">Click aquí</a></p>
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> Click aquí</p>
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" />Click aquí</a></p>
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> <a 
+href="http://www.google.com.ar">Click aquí</a></p>
+
+En la primera linea veremos una imagen y su enlace que al cliquear nos deriva a la pagina
+"http://www.google.com.ar"
+En la segunda linea veremos una imagen con un enlace a "http://www.google.com.ar" seguido de un texto 
+sin enlace.
+En la tercer linea veremos una imagen con un enlace a "http://www.google.com.ar seguido de un texto
+con enlace. 
+En la cuarta y quinta linea veremos una imagen con un enlace a "http://www.google.com.ar seguido de un texto
+pero ambos enlaces estan separados, ya que como podemos ver hay dos etiquetas de <a></a>
+
+3.c)
+<ul> 
+<li>xxx</li>
+<li>yyy</li>
+<li>zzz</li>
+</ul>
+<ol>
+<li>xxx</li>
+<li>yyy</li>
+<li>zzz</li>
+</ol>
+<ol>
+<li>xxx</li>
+</ol>
+<ol>
+<li value="2">yyy</li>
+</ol>
+<ol>
+<li
+value="3">zzz</li>
+</ol>
+<blockquote>
+<p>1. xxx<br />
+2. yyy<br />
+3. zzz</p>
+</blockquote>
+
+Primer caso vemos una lista no ordenada.
+Segundo caso vemos una lista ordenada.
+Tercer caso vemos lo mismo que en el segundo caso pero estamos utilizando tres listas ordenadas.
+Cuarto caso es una cita en bloque se visualizará algo similar a una lista orenada pero en realidad 
+solo es texto.
+
+3.d)
+<table border="1" width="300">
+<tr>
+<th>Columna 1</th>
+<th>Columna 2</th>
+</tr>
+<tr>
+<td>Celda 1</td>
+<td>Celda 2</td>
+</tr>
+<tr>
+<td>Celda 3</td>
+<td>Celda 4</td>
+</tr>
+</table>
+<table border="1" width="300">
+<tr>
+<td><div align="center"><strong>Colum
+na1</strong></div></td>
+<td><div align="center"><strong>Columna 
+2</strong></div></td>
+</tr>
+<tr>
+<td>Celda 1</td>
+<td>Celda 2</td>
+</tr>
+<tr>
+<td>Celda 3</td>
+<td>Celda 4</td>
+</tr>
+</table>
+
+La diferencia entre estos dos codigos no es algo visual, ya que ambos se ven igual en una pagina. La
+diferencia que podemos observar es que en la etiqueta <th></th> de por si pone el texto en negrita y 
+lo ubica en el centro. Esto nos permite escribir menos etiquetas como la de <div></div> y <strong></strong>
+
+3.e)
+<table width="200">
+<caption>Título
+</caption>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+ <td bgcolor="#dddddd">
+&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr> 
+</table>
+<table width="200">
+<tr>
+<td colspan="3"><div 
+align="center">Título</div></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+</table>
+
+Las dos tablas se verán igual, la diferencia es que en la primera se está utilizando la etiqueta
+<caption></caption> para el título mientras que en la segunda se quiere imitar esto utlizando
+un <div></div> con la propiedad align="center"
+
+3.f)
+<table width="200">
+<tr>
+<td colspan="3"><div 
+align="center">Título</div></td>
+</tr>
+<tr>
+<td rowspan="2" bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+</table>
+<table width="200">
+<tr>
+<td colspan="3"><div
+align="center">Título</div></td>
+</tr>
+<tr>
+<td colspan="2"
+bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+</table>
+
+Este caso es similar al enterior, las  dos tablas se veran igual en la página pero se puede observar 
+el primer código es mas acotado, ya que la etiqueta nos evita tener que agregar en códgio CSS.
+
+3.g)
+<table width="200" border="1">
+<tr>
+<td colspan="3"><div
+align="center">Título</div></td>
+</tr>
+<tr>
+<td colspan="2"rowspan="2">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td width="50%">&nbsp;</td>
+</tr>
+</table>
+<table width="200" border="1" cellpadding="0" 
+cellspacing="0">
+<tr>
+<td colspan="2"><div 
+align="center">Título</div></td>
+</tr>
+<tr>
+<td rowspan="2">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td width="50%">&nbsp;</td>
+</tr>
+</table>
+
+Aqui vemos dos tablas con tres filas en la primera haciendo de titulo y las 2 celdas de las primeras columnas
+juntas en una. La unica diferencia visual es que la primera tabla tiene bordes separados y la segunda tiene 
+bordes unidos usando los atributos de tabla cellpading=0 y cellspacing=0
+
+3.h)
+<form id="form1" name="form1" action="procesar.php" method="post" target="_blank">
+<fieldset>
+<legend>LOGIN</legend>
+Usuario: <input type="text" id="usu1" name="usu1" value="xxx" /><br />
+Clave: <input type="password" id="clave1" name="clave1" value="xxx" />
+</fieldset>
+<input type="submit" id="boton1" name="boton1" value="Enviar" />
+</form>
+<form id="form2" name="form2" action="" method="get" target="_blank">
+LOGIN<br />
+<label>Usuario: <input type="text" id="usu2" name="usu2" /></label><br />
+<label>Clave: <input type="text" id="clave2" name="clave2" /></label><br />
+<input type="submit" id="boton2" name="boton2" value="Enviar" />
+</form>
+<form id="form3" name="form3" action="mailto:xx@xx.com” enctype=text/plain method="p
+ost" target="_blank">
+<fieldset>
+<legend>LOGIN</legend>
+Usuario: <input type="text" id="usu3" name="usu3" /><br />
+Clave: <input type="password" id="clave3" name="clave3" />
+</fieldset>
+<input type="reset" id="boton3" name="boton3" value=
+"Enviar" />
+</form>
+
+En el primer caso vemos un formulario que dentro de <fieldset></fieldset> contiene una leyende y dos campos de 
+usuario y clave. Fuera del fieldset vemos un boton tipo submit. Vemos que el atributo action toma el 
+valor "procesar.php", y el atributo method toma el valor "post"
+El segundo caso vemos un formulario sin el bloque fieldset, tambien tiene una leyenda y dos campos usuario y
+clave, pero no tienen un valor por defecto. Tambien posee un boton para enviar y el atributo action esta vacio
+y el method es "get"
+El tercer caso vemos un formulario similar al primero, con la diferencia que los atributos action toma el valor
+"mailto:xx@xx.com", el method es "post" y el atributo enctype="text/plain". El boton es de tipo reset
+
+3.i)
+<label>Botón 1
+<button type="button" name="boton1" id="boton1">
+<img src="logo.jpg" alt="Botón con imagen " width="30" height="20" /><br />
+<b>CLICK AQUÍ</b></button></label>
+<label>Botón 2
+<input type="button" name="boton2" id="boton2" value="CLICK AQUÍ" />
+</label>
+
+En el primer caso veremos un boton que tiene una imagen con un texto que dice CLICK AQUI en negrita.
+En el segundo caso veremos un boton que dentor dice CLICK AQUI. Este valor se lo asignamos con la propiedad 
+value
+
+3.j)
+<p><label><input type="radio" name="opcion" id="X" value="X" />X</label><br />
+<label><input type="radio" name="opcion" id="Y" value="Y" />Y</label></p>
+<p><label><input type="radio" name="opcion1" id="X" value="X" />X</label><br />
+<label><input type="radio" name="opcion2" id="Y" value="Y" />Y</label></p>
+
+Se visualizara cuando 4 radio buttons. Los dos primeros X e Y estan en el mismo grupo ya que tienen el 
+mismo nombre como atributo "opcion", por esto al seleccionar uno se va a quitar la seleccion del otro. 
+Los otros dos botones estan en diferentes grupos ya que sus atributos de nombre son diferentes ( uno 
+es "opcion1" y otro "opcion2") y se podran seleccionar los dos a la vez.
+
+3.k)
+<select name="lista">
+<optgroup label="Caso 1">
+<option>Mayo</option>
+<option>Junio</option>
+</optgroup>
+<optgroup label="Caso 2">
+<option>Mayo</option>
+<option>Junio</option>
+</optgroup>
+</select>
+<select name="lista[]" multiple="multiple">
+<optgroup label=" Caso 1">
+<option>Mayo</option>
+<option>Junio</option>
+</optgroup>
+<optgroup label=" Caso 2">
+<option>Mayo</option>
+<option>Junio</option>
+</optgroup>
+</select>
+
+En la primera observamos que es una lista desplegable con dos subcategorias. Solo se puede elegir una 
+sola opcion. La segunda es una lista igual a la primera pero con la diferencia de que se pueden 
+elegir multiples opciones ya que tiene el atributo multiple="multiple"

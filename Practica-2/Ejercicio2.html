@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <p>
+        Ejercicio 2
+        Analizar el siguiente código señalando declaraciones y aplicaciones de reglas, y su efecto.
+    </p>
+    p#normal {
+        font-family: arial,helvetica;
+        font-size: 11px;
+        font-weight: bold;
+        }
+        *#destacado {
+        border-style: solid;
+        border-color: blue;
+        border-width: 2px;
+        }
+        #distinto {
+        background-color: #9EC7EB;
+        color: red;
+        }
+
+        <p id="normal">Este es un párrafo</p>
+        <p id="destacado">Este es otro párrafo</p>
+        <table id="destacado"><tr><td>Esta es una tabla</td></tr></table>
+        <p id="distinto">Este es el último párrafo</p>
+        
+        <p> p#normal {
+            font-family: arial,helvetica;
+            font-size: 11px;
+            font-weight: bold;
+            }
+        </p>
+        <p>
+            Este código se aplicará a todas las etiquetas <p> con el atributo id="normal", aplicandole 
+            un tipo de fuente de letra arial y si el navegador no lo soporta usará helvetica, un tamaño de
+            letra de 11 pixeles, y define un grosor de la fuente haciendo en este caso que esta sea negrita.
+        </p>
+        <p> 
+            *#destacado {
+            border-style: solid;
+            border-color: blue;
+            border-width: 2px;
+            }
+        </p>
+        <p>
+            Este código se aplica a todas las etiquetas que tienen el atributo id="destacado", que es este caso
+            son una etiqueta <p> y una etiqueta <table>. Se le asignara ambas un borde sólido, de dos pixeles 
+            y de color azul
+        </p>
+        <p> #distinto {
+            background-color: #9EC7EB;
+            color: red;
+            } 
+        </p>
+        <p>
+            Este código se aplica a las etiquetas con el atributo id="distinto", asignandole un color de 
+            fondo de #9EC7EB y un color de letra rojo. En este caso se aplicaría a la 
+            etiqueta <p id="distinto">Este es el último párrafo</p>
+        </p>
+</head>
+<body>
+    
+</body>
+</html>
